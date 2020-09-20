@@ -1,0 +1,256 @@
+<html>
+<link rel="icon" type="image/png" href="{{url_for('static', filename='favicon-32x32.png')}}" sizes="32x32" />
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<title>FallGraphs Gaming | FallGuys Statistics and Analysis</title>
+	<style type="text/css">
+
+		/* Layout */
+		body {
+			min-width: 630px;
+		}
+		
+		img.logo {
+			height: 40px;
+			width: 60px;
+			vertical-align: bottom;
+		}
+
+		label.logo1 {
+			height: 40px;
+			font-size: 40px;
+			font-family: sans-serif;
+			font-weight: bold;
+			color: black;
+			padding-bottom: 5px;
+		}
+
+		label.logo2 {
+			height: 40px;
+			font-size: 40px;
+			font-family: sans-serif;
+			font-weight: bold;
+			color: white;
+			padding-bottom: 5px;
+		}
+
+		#container {
+			padding-left: 200px;
+			padding-right: 190px;
+		}
+		
+		#container .column {
+			position: relative;
+			float: left;
+		}
+		
+		#center {
+			padding: 10px 20px;
+			width: 100%;
+		}
+		
+		#left {
+			width: 180px;
+			padding: 0 10px;
+			right: 240px;
+			margin-left: -100%;
+		}
+		
+		#right {
+			width: 130px;
+			padding: 0 10px;
+			margin-right: -100%;
+		}
+		
+		#footer {
+			clear: both;
+		}
+		
+		/* IE hack */
+		* html #left {
+			left: 150px;
+		}
+
+		/* Make the columns the same height as each other */
+		#container {
+			overflow: hidden;
+		}
+
+		#container .column {
+			padding-bottom: 1001em;
+			margin-bottom: -1000em;
+		}
+
+		/* Fix for the footer */
+		* html body {
+			overflow: hidden;
+		}
+		
+		* html #footer-wrapper {
+			float: left;
+			position: relative;
+			width: 100%;
+			padding-bottom: 10010px;
+			margin-bottom: -10000px;
+			background: #fff;
+		}
+
+		/* Aesthetics */
+		body {
+			margin: 0;
+			padding: 0;
+			font-family:Sans-serif;
+			line-height: 1.5em;
+		}
+		
+		p {
+			color: #555;
+		}
+
+		nav ul {
+			list-style-type: none;
+			margin: 0;
+			padding: 0;
+		}
+		
+		nav ul a {
+			color: darkgreen;
+			text-decoration: none;
+		}
+
+		#header, #footer {
+			font-size: large;
+			padding: 0.3em;
+			background: #50AE26;
+		}
+
+		#left {
+			background: #DAE9BC;
+		}
+		
+		#right {
+			background: #F7FDEB;
+		}
+
+		#center {
+			background: #fff;
+		}
+
+		#container .column {
+			padding-top: 1em;
+		}
+		
+		input.textBox {
+			margin-top: 5px;
+			margin-bottom: 5px;
+			height: 30px;
+			width: 350px;
+			font-size: 15px;
+			font-family: Verdana;
+			line-height: 30px;
+			display: inline-block; 
+			vertical-align: middle;
+		}
+
+		label.inputLabel {
+			font-family: Verdana;
+			font-size: 15px;
+			line-height: 30px;
+			width: 80px;
+			display:inline-block;
+		}
+
+		button.basic {
+			width: 100px;
+			height: 30px;
+			font-size: 15px;
+			font-family: Verdana;
+			margin-top: 5px;
+			margin-bottom: 5px;
+		}
+
+		div.logo {
+			display: inline;
+		}
+
+		.logo_container {
+			text-align: left;
+			position: relative;
+		}
+
+	</style>
+</head>
+
+<body>
+	<header id="header">
+		<a href="/" style="text-decoration:none">
+			<img src="{{url_for('static', filename='fallgraphs.jpg')}}" class="logo"></img>
+			<label class="logo1">FALL</label><label class="logo2">GRAPHS</label>
+		</a>
+	</header>
+	
+	<div id="container">
+		<main id="center" class="column">
+			<article>
+				<h1>Data Entry</h1>
+					<p>This is where you can enter new data as you play. There will be buttons and text entry boxes and stuff, maybe some drop down menus too.</p>
+
+					<br>
+					<form method="post">
+						<label class="inputLabel" for="name_input">Name:</label>
+						<input class="textBox" type="text" id="name_input" name="name_input"/><br>
+
+						<label class="inputLabel" for="round_input">Round:</label>
+						<input class="textBox" type="text" id="round_input" name="round_input"/><br>
+
+						<label class="inputLabel" for="map_input">Map:</label>
+						<input class="textBox" type="text" id="map_input" name="map_input"/><br>
+
+						<label class="inputLabel" for="entering_input">Entering:</label>
+						<input class="textBox" type="text" id="entering_input" name="entering_input"/><br>
+
+						<label class="inputLabel" for="qualifiers_input">Qualifiers:</label>
+						<input class="textBox" type="text" id="qualifiers_input" name="qualifiers_input"/><br>
+						<label class="inputLabel" for="qualified_bool">Qualified:</label>
+						<input type="checkbox" id="qualified_bool" name="qualified_bool"><br><br>
+
+						<button>Submit</button>
+					</form>
+						
+			</article>								
+		</main>
+
+		<nav id="left" class="column">
+			<h3>Quick Links</h3>
+			<ul>
+				<li><a href="/data_entry">Enter Data</a></li>
+				<li><a href="https://docs.google.com/spreadsheets/d/14vvPE3uRnwZKkmlW_8uiOIpNeDYr7bGdoH0Usf51RUE/edit?ts=5f5ff958#gid=1111297487" target="_blank">Google Spreadsheet</a></li>
+				<li><a href="#">Link 3</a></li>
+				<li><a href="#">Link 4</a></li>
+				<li><a href="/about">About Us</a></li>
+			</ul>
+			<h3>Left heading</h3>
+			<ul>
+				<li><a href="#">Link 1</a></li>
+				<li><a href="#">Link 2</a></li>
+				<li><a href="#">Link 3</a></li>
+				<li><a href="#">Link 4</a></li>
+				<li><a href="#">Link 5</a></li>
+			</ul>
+
+		</nav>
+
+		<div id="right" class="column">
+			<h3>Right heading</h3>
+			<p><script>generateText(1)</script></p>
+		</div>
+
+	</div>
+
+	<div id="footer-wrapper">
+		<footer id="footer"><p>Footer...</p></footer>
+	</div>
+
+</body>
+
+</html>
