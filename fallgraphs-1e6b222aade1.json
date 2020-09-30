@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "fallgraphs",
+  "private_key_id": "1e6b222aade17d5975532874c7407c414e716f6f",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQDB3p9dVGj/HmzI\npzHxmnhCdvCIw4ILIjnv1SsjlxaOPfMVk/Qf5mtA+FWQaUzdwwFXOJN7baOmEt/E\nCZJt7D9Y0/hLAbgJ8i4U7/zqFLIWD+GmlFwAPkAEvVkfYBJCPMr7FX2SH3TpEUt5\nluHflkVegjVVgeI7lZ5uFFBmXfphCzJe5ltQA+MJFrIRxEVlZB4nS+osAOGVpSTt\nAHRm7cOVnCOWSArwr7jCkrWIbSmlfoedQu08snDNveymaQsFAGgO+oXpvrdoUiBX\npMGglc9mAtNWUS3gEdd/IPVJn01EmmRxH5K5KfVtJWvTEZUiuIHFLny1KHoSR0Jf\njN+l4RRpAgMBAAECggEAAlLaQyKbXY9uS1thqF0rGtTVHjaFrP98hUjfSv5pGUxZ\nyQTsdKNs3qr7T49Lig7nybVWYzDVuMxaHT3mIOYnfjeQLsn2/DuIXNzhgaa82bHY\nCQiXL7OPTd89Hbinj16uKiNATYuN+aso5eyuiWECNNdHr14uqXsqGnSo4Ak5Uodr\n9S4DrKPyP+00I7NdMKuHERq5Wb9BJEzHuts28n51K5BULBZhHUTLsN6xtCasfKD2\n9GQ1lXMGzK7X//iGXpn3YWd/Jkwn11gL7qG4vfLbmJfD0Y9BXyYm3yIXzgBG4Z0d\n5f9J7TqpAFZNArmaexAj9c4Bd25iAT5V1oh+fuNpBwKBgQD3DnxKVDFl1x6Rm4dp\nnvV6QlQE3j7I8L1kkIDtlfIZV1Gqg3oDHG8CK+cER0rZdfofWS57azODJEO1RLic\nsVvibfUCiJNx5whD1Qb0I8BqbJ9PafsgiirRSpBIeuH9dQoCMQK69W5yeh/uhOUK\nA3cXcOjgoMoZUnIfBhNeawCR6wKBgQDI4z6a9HMycOJutfOQpHeGhQ6PmX9ST950\nDfj9tFWP1n1mhii63eV48Ctsidnqutu5I0XT3Vr/WwzQnkzBZFFCNVlqrX6olLdw\nafXWuHEp1o/eF/vMWSdiWBm9PDe6awW01KpPsUpYvscgvUVohY0Eqf8gF61Erh9r\nF4h8tKJJ+wKBgQDJbI35K9t6ZIEPxfYJLwiEvT8zGN+nhF9ldksnaXERKBf1JWx8\nzNnUs2aOHnHwCjf7BwLWrPg6m354c6bwWcnIOk3f2uobm3kplK0ur1dZbWYVoRqV\n1RBDwr8P2OAXfSzDzKGlPCToQJl4JfF20IxwGCZFvdIIAyf4E0QHXsYAMQKBgCg4\nHvOlF1807JCfyxjdZLTA9O5ZG/2d0frIRV59+Vdn6QlauNLY1DWHWBpN6xwstwr0\n/ejx+2L+lq051EIv1Hj99139SEt2ItfVzwtjN/zZYUpk4NvDybfNzbFuWfXvsV/H\n6CU2aJ0l7PYoDrpjap1Rb6u8Mct7VPz65C+bdpZ7AoGADpTMSQQymnq5A0V1yHPB\nv3lgePc01HPQl5wtvXom10CjRTOToMxEwH/o22d9JaeuY4GRbSXveag0/ilgW7Dq\nj8fQzYxkE+CcWvJxVR2EBoqxQiiVJAaEoWfTyS2A19LqZUSyVjfrT7Ufm0owE3cI\nOzVq8MHZj4rQ6E/k9VrnA48=\n-----END PRIVATE KEY-----\n",
+  "client_email": "fallgraphs-data-appender@fallgraphs.iam.gserviceaccount.com",
+  "client_id": "117847271338626093873",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/fallgraphs-data-appender%40fallgraphs.iam.gserviceaccount.com"
+}
