@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html>
 <link rel="icon" type="image/png" href="{{url_for('static', filename='favicon-32x32.png')}}" sizes="32x32" />
 <head>
@@ -196,25 +197,62 @@
 					<p>This is where you can enter new data as you play. There will be buttons and text entry boxes and stuff, maybe some drop down menus too.</p>
 
 					<br>
-					<form method="post">
+					<form method="post" onsubmit="incrementRound()">
 						<label class="inputLabel" for="name_input">Name:</label>
-						<input class="textBox" type="text" id="name_input" name="name_input"/><br>
+						<input class="textBox" type="text" list="names_list" autcomplete="on" id="name_input" name="name_input" value="{{ request.form['name_input'] }}"/><br>
+
+						<datalist id="names_list">
+							<option value="Brant"></option>
+							<option value="Joe"></option>
+							<option value="Jeremy"></option>
+							<option value="Nick"></option>
+							<option value="Isabell"></option>
+						</datalist>
 
 						<label class="inputLabel" for="round_input">Round:</label>
-						<input class="textBox" type="text" id="round_input" name="round_input"/><br>
+						<input class="textBox" type="number" id="round_input" name="round_input" value="{{ request.form['round_input'] }}" min="1" max="5" autocomplete="off"/><br>
 
 						<label class="inputLabel" for="map_input">Map:</label>
-						<input class="textBox" type="text" id="map_input" name="map_input"/><br>
+						<input class="textBox" type="text" autcomplete="on" list="maps_list" id="map_input" name="map_input"/><br>
+
+						<datalist id="maps_list">
+							<option value="Dizzy Heights">
+							<option value="Hit Parade">
+							<option value="See Saw">
+							<option value="Door Dash">
+							<option value="Gate Crash">
+							<option value="Tip Toe">
+							<option value="The Whirlygig">
+							<option value="Slime Climb">
+							<option value="Fruit Chute">
+							<option value="Jump Club">
+							<option value="Roll Out">
+							<option value="Block Party">
+							<option value="Perfect Match">
+							<option value="Tail Tag">
+							<option value="Egg Scramble">
+							<option value="Rock 'N' Roll">
+							<option value="Fall Ball">
+							<option value="Team Tail Tag">
+							<option value="Jinxed">
+							<option value="Hoopsie Daisy">
+							<option value="Hoarders">
+							<option value="Fall Mountain">
+							<option value="Hex-A-Gone">
+							<option value="Royal Fumble">
+							<option value="Jump Showdown">
+						</datalist>
 
 						<label class="inputLabel" for="entering_input">Entering:</label>
-						<input class="textBox" type="text" id="entering_input" name="entering_input"/><br>
+						<input class="textBox" type="number" id="entering_input" name="entering_input" min="1" max="60" value="{{ request.form['qualifiers_input'] }}" autocomplete="off"/><br>
 
 						<label class="inputLabel" for="qualifiers_input">Qualifiers:</label>
-						<input class="textBox" type="text" id="qualifiers_input" name="qualifiers_input"/><br>
+						<input class="textBox" type="number" id="qualifiers_input" name="qualifiers_input" min="1" max="60" autocomplete="off"/><br>
 						<label class="inputLabel" for="qualified_bool">Qualified:</label>
 						<input type="checkbox" id="qualified_bool" name="qualified_bool"><br><br>
 
-						<button>Submit</button>
+						<button type="submit">Submit</button>
+						<button type="reset">New Game</button>
 					</form>
 						
 			</article>								
@@ -250,6 +288,12 @@
 	<div id="footer-wrapper">
 		<footer id="footer"><p>Footer...</p></footer>
 	</div>
+
+	<script>
+		function incrementRound() {
+		  document.getElementById("round_input").stepUp();
+		}
+	</script>
 
 </body>
 
